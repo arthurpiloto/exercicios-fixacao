@@ -96,7 +96,7 @@ form {
 }
 
 .button:hover {
-    box-shadow: inset 0px 0px 0px 40px var(--dark-color);
+    box-shadow: inset 0px 0px 0px 40px #323232;
 }
 
 .result{
