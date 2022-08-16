@@ -2,16 +2,17 @@
 
 function readNumber()
 {
-    const valN = +document.getElementById(`value-n`).value
+    let valN = +document.getElementById(`value-n`).value
     const result = document.getElementById(`result`)
+    const readerForm = document.getElementById(`reader-form`)
 
-    if (valN < 0)
+    if (readerForm.reportValidity())
     {
-        valN = valN * (-1)
-    }
-    else
-    {
-        result.textContent = `Valor positivo: ${valN}`
+        if (valN < 0)
+        {
+            valN = valN * (-1)
+        }
+        result.textContent = `Valor positivo: ${valN}`   
     }
 }
 
