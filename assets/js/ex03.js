@@ -16,9 +16,8 @@ function mediaCalculate(n1, n2, n3, n4)
         }
 
         media = (nota1 + nota2 + nota3 + nota4) / 4
-        return media
+        return media.toFixed(1)
     }
-    return showMessageError()
 }
 
 function validateMedia()
@@ -37,10 +36,20 @@ function showMessage()
 {
     const result = document.getElementById(`result`)
 
-    result.textContent = `Média = ${mediaCalculate()}. Aluno ${validateMedia}`
+    result.textContent = `Média = ${mediaCalculate()}. Aluno ${validateMedia()}`
 }
 
-function showMessageError()
+function callFunction()
 {
-    return alert(`ERROR`)
+    if (mediaCalculate() == undefined)
+    {
+        alert(`ERROR`)
+    }
+    else
+    {
+        mediaCalculate()
+        showMessage()
+    }
 }
+
+const calculateMedia = document.getElementById(`calculate`).addEventListener(`click`, callFunction)
