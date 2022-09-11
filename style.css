@@ -25,7 +25,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60%;
+    width: 50%;
     height: 60%;
 }
 
@@ -36,23 +36,21 @@ ul {
     gap: 2rem;
 }
 
-.link-container {
+button {
     border: .2rem solid black;
+    background: none;
     padding: 1.6rem;
+    color: black;
+    font-size: 3rem;
     transition: .6s ease;
 }
 
-.link-container:hover {
+button:hover {
     background-color: blue;
 }
 
-a {
-    color: black;
-    font-size: 4rem;
-}
-
-.result {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+iframe {
+    border: none;
+    width: 40rem;
+    height: 50rem;
 }
