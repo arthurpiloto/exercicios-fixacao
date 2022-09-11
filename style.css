@@ -21,7 +21,6 @@ main {
 }
 
 .container {
-    background-color: tomato;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: blue;
+    background-color: #5375CF;
 }
 
 iframe {
